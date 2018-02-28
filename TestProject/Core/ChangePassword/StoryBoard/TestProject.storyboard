@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eMH-81-Zx4">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="hYP-B9-5G8">
+            <objects>
+                <navigationController id="eMH-81-Zx4" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9lx-RR-CSg">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="GuS-DI-Y5k" kind="relationship" relationship="rootViewController" id="SGQ-rs-R6u"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y7U-vI-SSr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2476" y="1567"/>
+        </scene>
+        <!--Test Project View Controller-->
+        <scene sceneID="Qxq-Ut-rNd">
+            <objects>
+                <viewController storyboardIdentifier="TestProjectViewController" id="GuS-DI-Y5k" customClass="TestProjectViewController" customModule="TestProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9nf-Cx-jdm"/>
+                        <viewControllerLayoutGuide type="bottom" id="qMQ-DG-bdh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="20P-sl-L2G">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WA2-sq-Ivx">
+                                <rect key="frame" x="16" y="146" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="SeF-qV-RKD"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WA2-sq-Ivx" firstAttribute="top" secondItem="9nf-Cx-jdm" secondAttribute="bottom" constant="82" id="FJl-4h-Gzx"/>
+                            <constraint firstAttribute="trailing" secondItem="WA2-sq-Ivx" secondAttribute="trailing" constant="16" id="pSG-Si-RXZ"/>
+                            <constraint firstItem="WA2-sq-Ivx" firstAttribute="leading" secondItem="20P-sl-L2G" secondAttribute="leading" constant="16" id="zBq-XY-T97"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="0BX-02-Y8N"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hHH-48-Rfx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1687.2" y="1567.4662668665669"/>
+        </scene>
+    </scenes>
+</document>
